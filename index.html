@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        img {
+            height: 60dvh !important;
+            display: block !important;
+            margin-inline: auto !important;
+        }
+
+        body {
+            user-select: none;
+        }
+
+        @media (width<413px) {
+            #footer {
+
+                font-size: 10px !important;
+            }
+        }
+
+        @media (width>413px) {
+            #footer {
+
+                font-size: 16px !important;
+            }
+        }
+
+        @media (width>600px) {
+            #footer {
+
+                font-size: 16px !important;
+            }
+        }
+    </style>
+</head>
+
+<body data-bs-theme="dark">
+    <div class="container">
+        <div class="row text-center">
+
+            <!-- ^ Headings -->
+            <div class="col-8 col-lg-7 col-lg-5 mx-auto px-sm-5">
+                <h3 class="border-bottom mt-4 pb-3">Day 7 - Task 2</h3>
+            </div>
+            <div class="col-10 col-md-8 col-lg-8 mx-auto">
+
+                <h1 class="border-bottom mb-3 pb-3">Photo Gallery</h1>
+
+            </div>
+            <!-- ^ Buttons -->
+            <div class="col-10 col-md-8  mx-auto">
+                <div id="btn-group" class="btn-group d-flex mb-3">
+                    <button id="previousBtn" class="btn btn-light">Previous</button>
+                    <button id="nextBtn" class="btn btn-light">Next</button>
+                    <button id="slideShowBtn" class="btn btn-light">SlideShow</button>
+                    <button id="stopBtn" class="btn btn-light">Stop</button>
+                </div>
+            </div>
+
+            <!-- ^ Gallery -->
+            <div id="gallery" class="text-center">
+                <img id="image" class="img-fluid" src="SlideShow/1.jpg" alt="photo-slider">
+            </div>
+
+            <!-- ^ Footer -->
+            <div class="col-10 col-md-12 col-lg-8 mx-auto">
+                <p id="footer" class="lead border-top pt-3 mt-3">
+                    <span class="text-white fw-semibold">Eng. Mai,</span>
+                    <span>Thank you for amazing lectures and discussions!
+                        I learned a lot and benefited from your course! Thank you!</span>
+                    <a href="https://wa.me/+201022033579" target="_blank">MrAli</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <script src="js/task2.js"></script>
+</body>
+
+</html>
